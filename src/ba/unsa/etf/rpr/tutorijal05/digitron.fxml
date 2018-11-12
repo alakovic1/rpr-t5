@@ -46,31 +46,31 @@
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="devet" maxWidth="Infinity" mnemonicParsing="false" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <Button fx:id="devet" maxWidth="Infinity" mnemonicParsing="false" onAction="#za9" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="cetiri" maxWidth="Infinity" mnemonicParsing="false" text="4" GridPane.rowIndex="3">
+        <Button fx:id="cetiri" maxWidth="Infinity" mnemonicParsing="false" onAction="#za4" text="4" GridPane.rowIndex="3">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="osam" maxWidth="Infinity" mnemonicParsing="false" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Button fx:id="osam" maxWidth="Infinity" mnemonicParsing="false" onAction="#za8" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="sedam" maxWidth="Infinity" mnemonicParsing="false" text="7" GridPane.rowIndex="2">
+        <Button fx:id="sedam" maxWidth="Infinity" mnemonicParsing="false" onAction="#za7" text="7" GridPane.rowIndex="2">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="sest" maxWidth="Infinity" mnemonicParsing="false" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <Button fx:id="sest" maxWidth="Infinity" mnemonicParsing="false" onAction="#za6" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="pet" maxWidth="Infinity" mnemonicParsing="false" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Button fx:id="pet" maxWidth="Infinity" mnemonicParsing="false" onAction="#za5" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="nula" maxWidth="Infinity" mnemonicParsing="false" text="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+        <Button fx:id="nula" maxWidth="Infinity" mnemonicParsing="false" onAction="#za0" text="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
          <font>
             <Font size="20.0" />
          </font></Button>
@@ -78,15 +78,15 @@
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="dva" maxWidth="Infinity" mnemonicParsing="false" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button fx:id="dva" maxWidth="Infinity" mnemonicParsing="false" onAction="#za2" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="jedan" maxWidth="Infinity" mnemonicParsing="false" text="1" GridPane.rowIndex="4">
+        <Button fx:id="jedan" maxWidth="Infinity" mnemonicParsing="false" onAction="#za1" text="1" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="tri" maxWidth="Infinity" mnemonicParsing="false" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <Button fx:id="tri" maxWidth="Infinity" mnemonicParsing="false" onAction="#za3" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font></Button>
@@ -98,7 +98,7 @@
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Label fx:id="unos" alignment="CENTER_RIGHT" disable="true" maxWidth="Infinity" prefHeight="62.0" prefWidth="305.0" text="${controller.displej}" textAlignment="RIGHT" textFill="#66d60f" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS">
+        <Label fx:id="unos" alignment="CENTER_RIGHT" disable="true" maxWidth="Infinity" prefHeight="62.0" prefWidth="305.0" text="${controller.displej}" textAlignment="RIGHT" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS">
          <font>
             <Font size="26.0" />
          </font></Label>
