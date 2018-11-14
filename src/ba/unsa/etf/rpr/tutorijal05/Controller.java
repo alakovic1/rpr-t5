@@ -125,19 +125,19 @@ public class Controller {
 
     public void zaJednako(ActionEvent event){
         if(getOperacija().equals("+")){
-            setPrikaz(Double.toString(Double.parseDouble(unos1.get())+Double.parseDouble(getPrikaz())));
+            setPrikaz(Double.toString(Double.parseDouble(getUnos1())+Double.parseDouble(getPrikaz())));
         }
         else if(getOperacija().equals("-")){
-            setPrikaz(Double.toString(Double.parseDouble(unos1.get())-Double.parseDouble(getPrikaz())));
+            setPrikaz(Double.toString(Double.parseDouble(getUnos1())-Double.parseDouble(getPrikaz())));
         }
         else if(getOperacija().equals("*")){
-            setPrikaz(Double.toString(Double.parseDouble(unos1.get())*Double.parseDouble(getPrikaz())));
+            setPrikaz(Double.toString(Double.parseDouble(getUnos1())*Double.parseDouble(getPrikaz())));
         }
         else if(getOperacija().equals("/")) {
-            setPrikaz(Double.toString(Double.parseDouble(unos1.get()) / Double.parseDouble(getPrikaz())));
+            setPrikaz(Double.toString(Double.parseDouble(getUnos1()) / Double.parseDouble(getPrikaz())));
         }
         else if(getOperacija().equals("%")){
-            setPrikaz(Double.toString(Double.parseDouble(unos1.get())+Double.parseDouble(getPrikaz())));
+            setPrikaz(Double.toString(Double.parseDouble(getUnos1())+Double.parseDouble(getPrikaz())));
         }
         setOperacija("=");
     }
