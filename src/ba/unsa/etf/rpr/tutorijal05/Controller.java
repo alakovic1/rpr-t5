@@ -137,7 +137,7 @@ public class Controller {
             setPrikaz(Double.toString(Double.parseDouble(getUnos1()) / Double.parseDouble(getPrikaz())));
         }
         else if(getOperacija().equals("%")){
-            setPrikaz(Double.toString(Double.parseDouble(getUnos1())+Double.parseDouble(getPrikaz())));
+            setPrikaz(Double.toString(Double.parseDouble(getUnos1())%Double.parseDouble(getPrikaz())));
         }
         setOperacija("=");
     }
