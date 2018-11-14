@@ -30,75 +30,75 @@
         <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
     </rowConstraints>
     <children>
-        <Button fx:id="procenat" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="\%" GridPane.rowIndex="1">
+        <Button fx:id="modBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#zaMod" text="\%" GridPane.rowIndex="1">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="kosacrta" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button fx:id="divBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#zaDijeljenje" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="puta" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <Button fx:id="mulBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#zaMnozenje" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="minus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#zaMinus" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1">
+        <Button fx:id="subBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#zaMinus" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="devet" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za9" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <Button fx:id="btn9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za9" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="cetiri" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za4" text="4" GridPane.rowIndex="3">
+        <Button fx:id="btn4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za4" text="4" GridPane.rowIndex="3">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="osam" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za8" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Button fx:id="btn8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za8" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="sedam" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za7" text="7" GridPane.rowIndex="2">
+        <Button fx:id="btn7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za7" text="7" GridPane.rowIndex="2">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="sest" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za6" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <Button fx:id="btn6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za6" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="pet" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za5" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Button fx:id="btn5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za5" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="nula" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za0" text="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+        <Button fx:id="btn0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za0" text="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="tacka" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="." GridPane.columnIndex="2" GridPane.rowIndex="5">
+        <Button fx:id="dotBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#zaTacku" text="." GridPane.columnIndex="2" GridPane.rowIndex="5">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="dva" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za2" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button fx:id="btn2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za2" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="jedan" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za1" text="1" GridPane.rowIndex="4">
+        <Button fx:id="btn1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za1" text="1" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="tri" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za3" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <Button fx:id="btn3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#za3" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="plus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#zaPlus" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2">
+        <Button fx:id="plusBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#zaPlus" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Button fx:id="jednako" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2">
+        <Button fx:id="equalsBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#zaJednako" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2">
          <font>
             <Font size="20.0" />
          </font></Button>
-        <Label fx:id="digitron" alignment="CENTER_RIGHT" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onDragDetected="#getUnos" prefHeight="62.0" prefWidth="305.0" textAlignment="RIGHT" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS">
+        <Label fx:id="display" alignment="CENTER_RIGHT" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="62.0" prefWidth="305.0" text="${controller.prikaz}" textAlignment="RIGHT" textOverrun="WORD_ELLIPSIS" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS">
          <font>
             <Font size="26.0" />
          </font></Label>
