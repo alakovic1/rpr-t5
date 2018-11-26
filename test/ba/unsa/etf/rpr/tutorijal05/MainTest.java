@@ -106,4 +106,137 @@ class MainTest {
         robot.clickOn("#btn0");
         assertEquals("10", display.getText());
     }
+    @Test
+    public void number5Mul3 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#mulBtn");
+        robot.clickOn("#btn3");
+        robot.clickOn("#equalsBtn");
+        assertEquals("15.0", display.getText());
+    }
+    @Test
+    public void number13Mod3 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn1");
+        robot.clickOn("#btn3");
+        robot.clickOn("#modBtn");
+        robot.clickOn("#btn3");
+        robot.clickOn("#equalsBtn");
+        assertEquals("1.0", display.getText());
+    }
+    @Test
+    public void number5Mul20Minus1 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#mulBtn");
+        robot.clickOn("#btn2");
+        robot.clickOn("#btn0");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#btn1");
+        robot.clickOn("#equalsBtn");
+        assertEquals("99.0", display.getText());
+    }
+    @Test
+    public void number5Div20MinusEquals3Minus2 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#divBtn");
+        robot.clickOn("#btn2");
+        robot.clickOn("#btn0");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#btn3");
+        robot.clickOn("#equalsBtn");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#btn2");
+        robot.clickOn("#equalsBtn");
+        assertEquals("-4.75", display.getText());
+    }
+    @Test
+    public void zeroBtn3 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn0");
+        robot.clickOn("#btn0");
+        robot.clickOn("#btn0");
+        robot.clickOn("#btn0");
+        robot.clickOn("#btn0");
+        robot.clickOn("#btn0");
+        robot.clickOn("#btn0");
+        robot.clickOn("#btn0");
+        assertEquals("0", display.getText());
+    }
+    @Test
+    public void infinity (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn1");
+        robot.clickOn("#divBtn");
+        robot.clickOn("#btn0");
+        robot.clickOn("#equalsBtn");
+        assertEquals("Infinity", display.getText());
+    }
+    @Test
+    public void dotBtn2 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#dotBtn");
+        robot.clickOn("#dotBtn");
+        robot.clickOn("#dotBtn");
+        robot.clickOn("#dotBtn");
+        robot.clickOn("#dotBtn");
+        robot.clickOn("#dotBtn");
+        assertEquals("0.", display.getText());
+    }
+
+    @Test
+    public void plusBtn (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn0");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#btn0");
+        robot.clickOn("#equalsBtn");
+        assertEquals("0.0", display.getText());
+    }
+    @Test
+    public void plusBtn2 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn1");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#btn1");
+        robot.clickOn("#equalsBtn");
+        assertEquals("2.0", display.getText());
+    }
+    @Test
+    public void MinusBtn1 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#btn1");
+        robot.clickOn("#equalsBtn");
+        assertEquals("4.0", display.getText());
+    }
+    @Test
+    public void MinusBtn2 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#btn7");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#subBtn");
+        robot.clickOn("#btn1");
+        robot.clickOn("#equalsBtn");
+        assertEquals("-3.0", display.getText());
+    }
+
 }
